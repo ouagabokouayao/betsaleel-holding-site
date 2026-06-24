@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap de preversion locale. Remplacer les chemins par le domaine valide avant publication. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/index.html</loc></url>
+  <url><loc>/a-propos.html</loc></url>
+  <url><loc>/gouvernance.html</loc></url>
+  <url><loc>/ecosysteme.html</loc></url>
+  <url><loc>/impact-mission.html</loc></url>
+  <url><loc>/actualites.html</loc></url>
+  <url><loc>/partenaires.html</loc></url>
+  <url><loc>/contact.html</loc></url>
+</urlset>
