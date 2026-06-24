@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 440" width="1400" height="440" role="img" aria-label="Betsaleel Holding principal logo">
+  <defs>
+    <style>
+      .ivory { fill: #F6F0E2; }
+      .gold { fill: #C9A24A; stroke: #C9A24A; }
+      .gold-stroke { stroke: #C9A24A; fill: none; }
+      .gold-stroke2 { stroke: #E4C879; fill: none; }
+      .serif { font-family: 'Georgia', 'Times New Roman', serif; }
+      .italic { font-family: 'Georgia', 'Times New Roman', serif; font-style: italic; }
+    </style>
+  </defs>
+  <g transform="translate(40,35)">
+    <g transform="translate(0,0)">
+      <circle cx="160" cy="180" r="130" class="gold-stroke" stroke-width="1.8"/>
+      <path d="M55,195 C80,75 180,12 290,65" class="gold-stroke" stroke-width="2.2"/>
+      <path d="M90,235 C125,105 245,58 315,110" class="gold-stroke" stroke-width="1.6"/>
+      <line x1="100" y1="62" x2="100" y2="300" class="gold-stroke" stroke-width="1" opacity="0.6"/>
+      <line x1="220" y1="55" x2="220" y2="298" class="gold-stroke" stroke-width="1" opacity="0.6"/>
+      <circle cx="70" cy="180" r="5" class="gold"/>
+      <circle cx="120" cy="100" r="5" class="gold"/>
+      <circle cx="126" cy="178" r="5" class="gold"/>
+      <circle cx="182" cy="22" r="5" class="gold"/>
+      <circle cx="300" cy="82" r="5" class="gold"/>
+      <circle cx="328" cy="126" r="5" class="gold"/>
+      <circle cx="286" cy="300" r="5" class="gold"/>
+      <circle cx="120" cy="232" r="5" class="gold"/>
+      <line x1="70" y1="180" x2="126" y2="178" class="gold-stroke" stroke-width="1.2"/>
+      <line x1="70" y1="180" x2="120" y2="232" class="gold-stroke" stroke-width="1.2"/>
+      <line x1="126" y1="178" x2="120" y2="100" class="gold-stroke" stroke-width="1.2"/>
+      <line x1="120" y1="232" x2="286" y2="300" class="gold-stroke" stroke-width="1.2"/>
+      <line x1="120" y1="100" x2="182" y2="22" class="gold-stroke" stroke-width="1.2"/>
+      <text x="135" y="235" font-size="200" class="serif gold">B</text>
+      <text x="232" y="286" font-size="170" class="serif gold">H</text>
+    </g>
+    <line x1="430" y1="52" x2="430" y2="305" class="gold-stroke" stroke-width="3"/>
+    <g transform="translate(500,0)">
+      <text x="0" y="162" font-size="100" letter-spacing="14" class="serif ivory">BETSALEEL</text>
+      <line x1="8" y1="222" x2="290" y2="222" class="gold-stroke" stroke-width="2"/>
+      <text x="330" y="235" font-size="48" letter-spacing="10" class="serif gold">HOLDING</text>
+      <line x1="680" y1="222" x2="955" y2="222" class="gold-stroke" stroke-width="2"/>
+      <text x="210" y="305" font-size="42" class="italic ivory">Fonder. Diriger. Impacter.</text>
+    </g>
+  </g>
+</svg>

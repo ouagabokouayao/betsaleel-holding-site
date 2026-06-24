@@ -69,9 +69,20 @@ button:focus-visible {
 
 .brand {
   display: inline-flex;
-  flex-direction: column;
-  gap: 1px;
+  align-items: center;
+  gap: 10px;
   min-width: 178px;
+}
+
+.brand-image {
+  min-width: 210px;
+}
+
+.brand-logo {
+  width: min(228px, 52vw);
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
 }
 
 .brand strong {
@@ -235,6 +246,8 @@ p {
   background: var(--gold);
   color: #17130a;
   font-weight: 700;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .button.secondary {
@@ -433,8 +446,18 @@ p {
   margin: 0 auto;
   padding: 44px 0;
   display: grid;
-  grid-template-columns: minmax(220px, 0.75fr) minmax(260px, 1fr);
+  grid-template-columns: minmax(280px, 0.82fr) minmax(260px, 1fr);
   gap: 32px;
+}
+
+.footer-identity {
+  display: grid;
+  gap: 14px;
+}
+
+.footer-email a {
+  color: var(--gold-light);
+  overflow-wrap: anywhere;
 }
 
 .footer-links {
@@ -448,6 +471,51 @@ p {
 
 .footer-links a:hover {
   color: var(--gold-light);
+}
+
+.social-links,
+.social-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+}
+
+.social-links a,
+.social-panel a {
+  border-bottom: 1px solid rgba(201, 162, 74, 0.45);
+  color: var(--silver);
+  font-size: 0.92rem;
+}
+
+.social-links a:hover,
+.social-panel a:hover {
+  color: var(--gold-light);
+  border-color: var(--gold-light);
+}
+
+.social-panel {
+  padding-top: 4px;
+}
+
+.social-panel a {
+  padding: 8px 0;
+}
+
+.legal-content {
+  display: grid;
+  gap: 18px;
+}
+
+.legal-content h2 {
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  margin-bottom: 12px;
+}
+
+.legal-content a {
+  color: #5c4613;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
 }
 
 .small {
@@ -536,6 +604,14 @@ p {
 
   .button {
     width: 100%;
+  }
+
+  .brand-image {
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: min(198px, 58vw);
   }
 
   .visual img {
