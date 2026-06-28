@@ -262,6 +262,7 @@ p {
   font-weight: 700;
   text-align: center;
   overflow-wrap: anywhere;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
 .button.secondary {
@@ -273,6 +274,7 @@ p {
   border-color: var(--gold-light);
   background: var(--gold-light);
   color: #17130a;
+  transform: translateY(-1px);
 }
 
 .page-hero {
@@ -353,6 +355,13 @@ p {
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018));
   padding: 24px;
+  transition: border-color 180ms ease, transform 180ms ease, background-color 180ms ease;
+}
+
+.card:hover,
+.status-card:hover {
+  border-color: rgba(227, 198, 109, 0.42);
+  transform: translateY(-2px);
 }
 
 .section.light .card,
@@ -448,6 +457,42 @@ p {
   height: 8px;
   border: 1px solid var(--gold);
   transform: rotate(45deg);
+}
+
+.process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: process;
+}
+
+.process li {
+  counter-increment: process;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ivory);
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.92rem;
+}
+
+.process li::before {
+  content: counter(process, decimal-leading-zero);
+  color: var(--gold-light);
+  font-size: 0.72rem;
+}
+
+.section.light .process li {
+  border-color: rgba(16, 16, 16, 0.14);
+  color: #161616;
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .callout {
