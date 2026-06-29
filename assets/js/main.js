@@ -12,3 +12,32 @@ if (navToggle && siteNav) {
 document.querySelectorAll("[data-year]").forEach((node) => {
   node.textContent = new Date().getFullYear();
 });
+
+const revealTargets = document.querySelectorAll(".hero-inner, .page-hero-inner, .section-inner");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (revealTargets.length && !reduceMotion) {
+  document.body.classList.add("js-enhanced");
+
+  revealTargets.forEach((node) => {
+    node.setAttribute("data-reveal", "");
+  });
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    revealTargets.forEach((node) => revealObserver.observe(node));
+  } else {
+    revealTargets.forEach((node) => node.classList.add("is-visible"));
+  }
+}
