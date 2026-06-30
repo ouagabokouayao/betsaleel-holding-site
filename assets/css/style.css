@@ -296,6 +296,41 @@ p {
   transform: translateY(-1px);
 }
 
+.info-ticker {
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 14, 16, 0.96);
+  color: var(--ivory);
+}
+
+.info-ticker[hidden],
+.info-ticker.is-inactive {
+  display: none;
+}
+
+.info-ticker-inner {
+  width: min(var(--max), 100%);
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  min-width: 0;
+}
+
+.info-ticker-label {
+  color: var(--gold-light);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.info-ticker-text {
+  min-width: 0;
+  color: var(--silver);
+  overflow-wrap: anywhere;
+}
+
 .page-hero {
   position: relative;
   overflow: hidden;
@@ -562,6 +597,52 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.watch-section .callout {
+  align-self: stretch;
+  display: grid;
+  align-items: center;
+}
+
+.watch-grid {
+  align-items: stretch;
+}
+
+.watch-card h3 {
+  max-width: 18rem;
+}
+
+.watch-note,
+.watch-state {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  padding: 30px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.section.light .watch-note,
+.section.light .watch-state {
+  border-color: rgba(16, 16, 16, 0.12);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 18px 54px rgba(16, 16, 16, 0.06);
+}
+
+.watch-note h3,
+.watch-state h2 {
+  margin-bottom: 14px;
+}
+
+.watch-note p {
+  margin: 0;
+  color: var(--silver);
+}
+
+.section.light .watch-note p {
+  color: #4d4d48;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: linear-gradient(180deg, #050505, #030303);
@@ -674,8 +755,8 @@ p {
   *,
   *::before,
   *::after {
-    transition-duration: 1ms !important;
-    animation-duration: 1ms !important;
+    transition: none !important;
+    animation: none !important;
   }
 
   .js-enhanced [data-reveal] {
@@ -819,7 +900,9 @@ p {
 
   .card,
   .status-card,
-  .callout {
+  .callout,
+  .watch-note,
+  .watch-state {
     padding: 22px;
   }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap de preversion locale. Remplacer les chemins par le domaine valide avant publication. -->
+<!-- Sitemap de prepublication. Conserver prudent tant que l'indexation reste volontairement bloquee. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>/index.html</loc></url>
   <url><loc>/a-propos.html</loc></url>
