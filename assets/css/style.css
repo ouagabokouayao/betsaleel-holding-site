@@ -348,6 +348,38 @@ p {
   max-width: 840px;
 }
 
+.hero-home {
+  --hero-image: url("../img/pages/hero-accueil-betsaleel.webp");
+}
+
+.page-about {
+  --page-image: url("../img/pages/hero-a-propos-betsaleel.webp");
+}
+
+.page-governance {
+  --page-image: url("../img/pages/hero-gouvernance-betsaleel.webp");
+}
+
+.page-ecosystem {
+  --page-image: url("../img/pages/hero-ecosysteme-betsaleel.webp");
+}
+
+.page-impact {
+  --page-image: url("../img/pages/hero-impact-mission-betsaleel.webp");
+}
+
+.page-watch {
+  --page-image: url("../img/pages/hero-veille-holding-betsaleel.webp");
+}
+
+.page-partners {
+  --page-image: url("../img/pages/hero-partenaires-betsaleel.webp");
+}
+
+.page-contact {
+  --page-image: url("../img/pages/hero-contact-betsaleel.webp");
+}
+
 .section {
   padding: 96px 0;
   border-top: 1px solid rgba(244, 239, 229, 0.045);
