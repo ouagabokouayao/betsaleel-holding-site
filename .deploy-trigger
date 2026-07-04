@@ -1,4 +1,0 @@
-Redeploy Betsaleel GitHub Pages after Pages deploy timeout.
-Reason: previous Pages deploy artifact expired or deploy job timed out.
-Date: 2026-07-04
-Commit purpose: trigger clean GitHub Pages build and deploy.
